@@ -1,0 +1,44 @@
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="estilos.css">
+<script>
+  function mostrarContrasena(){
+      var tipo = document.getElementById("password");
+      if(tipo.type == "password"){
+          tipo.type = "text";
+      }else{
+          tipo.type = "password";
+      }
+  }
+</script>
+</head>
+
+<body>
+<form action="login_registrar.php" method="POST">
+<h2>Portal Estudiantil Iniciar sesión</h2>
+<!--aqui todo los imputs-->
+<input maxlength="10" minlength="4" type="text" placeholder="&#128273; Usuario" name="nombre" required>
+
+
+<div >
+    <div class="col">
+  <input maxlength="10" minlength="4" class="form-control" type="password" id="password" placeholder="&#128274; Contraseña" name="password" required>
+</div>
+    <div>
+  <button  type="button" onclick="mostrarContrasena()">Mostrar Contraseña</button>
+</div>
+  </div>
+<input type="submit" value="Ingresar" name="btningresar">
+
+<br>
+<div class="crear">
+<a href="registrar.html" style="float:right">Crear una cuenta</a>
+</div>
+
+</form>
+</body>
+</html>

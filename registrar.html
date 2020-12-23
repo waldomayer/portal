@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Registrar</title>
+<link rel="stylesheet" href="estilos.css">
+		
+</head>
+
+<body>
+<form action="login_registrar.php" method="POST">
+<h2>Crear una cuenta</h2>
+<input maxlength="10" minlength="4" type="text" placeholder="&#128273; Usuario" name="nombre" required>
+<input maxlength="10" minlength="4" type="password" placeholder="&#128274; Contraseña" name="password" required>
+<input maxlength="8" type="number" placeholder="&#x2116; DNI" name="dni" required>
+<input maxlength="32" type="text" placeholder="&#128231; e-mail" name="email" required>
+<input maxlength="10" minlength="7" type="text" placeholder="&#127979; Docente o Estudiante" name="Grado" required>
+
+<input type="submit" value="Registrar" name="btnregistrar">
+
+<br>
+<div class="regresar">
+<a href="index.html" style="float:right">Regresar</a>
+</div>
+</form>
+</body>
+</html>
